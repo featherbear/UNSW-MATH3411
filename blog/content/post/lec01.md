@@ -1,6 +1,5 @@
 ---
 title: "Lecture 01"
-description: "Revision"
 date: 2019-09-17T12:20:57+10:00
 
 categories: ["Lectures"]
