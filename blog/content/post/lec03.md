@@ -16,37 +16,39 @@ sequenceDiagrams:
 
 # Binary Hamming error-correction
 
-A code C that
+A code $C$ that
 
-- is binary with the code alphabet {0, 1}
-- has fixed length n codewords x = x1 ... xn
-- is single-error correcting
+- is binary with the code alphabet ${0, 1}$
+- has fixed length $n$ codewords $x = x_1 ... x_n$
+- is **only single-error correcting**
 - provides user-friendly error-correcting
-- uses m independent linear parity checks
+- uses $m$ independent linear parity checks
 
-* encoding scheme
-* correction handling
-* decoding scheme
+## Encoding Scheme
 
-\sum\_(j=1->n) a_ij x_j === 0 (mod 2) where i = 1,...,m and a_ij \in {0,1}
+The encoding scheme is arbitrary, but it is common for the 'check bits' to be the leading columns, and the 'information bits' to be the non-leading columns.
 
-Hx^T = 0 (in Z2)
+## Correction Handling
 
-Where H is the m x n parity check matrix with entries a_ij
+$\sum_(j=1->n) a_ij x_j === 0 (mod 2) where i = 1,...,m and a_ij \in {0,1}$
 
-Let C be the null space of H  
-(set of all vectors where Hx^T = 0)
+$Hx^T = 0$ (in $Z_2$)
 
-Define the syndrome S(y) = Hy^T
+Where $H$ is the $m x n$ parity check matrix with entries $a_ij$
 
-- S(x) = 0 iff x \in C
-- S(y) tells us when y has an error
+Let $C$ be the null space of $H$  
+(set of all vectors where $Hx^T = 0$)
 
-Let x be a codeword of C = {x \in Z_2^n : Hx^T = 0 }.
-Consider a word y with a single rror (x ~- y) in position i
+Define the syndrome $S(y) = Hy^T$
 
-Then y^T = x^T = e_i
-So S(y) =Hy^T = H(x^T + e_i) = Hx_T + He_i = 0 + H e_i = H e_i
+- $S(x) = 0$ iff $x \in C$
+- $S(y)$ tells us when $y$ has an error
+
+Let $x$ be a codeword of $C = {x \in Z_2^n : Hx^T = 0 }$.
+Consider a word $y$ with a single error (x ~- y) in position $i$
+
+Then $y^T = x^T = e_i$
+So $S(y) = Hy^T = H(x^T + e_i) = Hx_T + He_i = 0 + H e_i = H e_i$
 
 <!-- Now, H e_i  is the ith column of H so we can make error-correcting easy by defining the ith column of H to be  -->
 
@@ -62,13 +64,13 @@ H =
 0 0 0 1 1 0 1
 ```
 
-We call this parity check matrix for the binary Hamming(7,4) code ( 4 = 7 - 3 ...)
+We call this parity check matrix for the binary $Hamming(7,4)$ code ( 4 = 7 - 3 ...)
 
-H \* x^T = 0
+$H * x^T = 0$
 
-The word y = 00111 has a single rror
+The word $y = 00111$ has a single error
 
-To find this error we calculate the syndrome S(y)
+To find this error we calculate the syndrome $S(y)$
 
 S(y) = Hy^T = ( : | : | : ) ( : ) = (0;1;0)
 This corresponds to the binary number 010, namely 2
@@ -190,7 +192,7 @@ max, largest
 
 // d(&middot;, &middot;) is a **metric** on $Z_2^n$
 
-d(x,y)>=0 
+d(x,y)>=0
 d(x,y) = 0 iff x=y
 d(x,y) = d(y,x)
 d(x,z) <= d(x,y) + d(y,z)
@@ -198,4 +200,4 @@ d(x,z) <= d(x,y) + d(y,z)
 //
 
 w(x) = d(x, 0)
-d(x,y) = w(x-y) if x,y are over an Abelian group
+d(x,y) = w(x-y) [if x,y are over an Abelian group]
