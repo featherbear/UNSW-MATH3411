@@ -115,7 +115,7 @@ Which bits will be used?
 # Binary Hamming (n,k) codes
 
 - Binary
-- Block coces with codeword length $n$
+- Block codes with codeword length $n$
 - Systematic
 - $k$ information bits
 - $m = n - k$ check bits (in positions 1,2,4,...2^(m-1))

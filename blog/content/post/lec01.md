@@ -1,5 +1,6 @@
 ---
-title: "Lecture 01"
+title: "Introduction to Codes"
+description: "Modulo Arithmetic, ISBN"
 date: 2019-09-17T12:20:57+10:00
 
 categories: ["Lectures"]
@@ -58,14 +59,7 @@ For binary numbers, we have the set Z2 = {0,1} modulo 2.
   - 3 x 5 = 1
   - 3^-1 = 5
 
-# Probability
 
-## Bayes' Rule
-
-![](https://miro.medium.com/max/1468/1*LB-G6WBuswEfpg20FMighA.png)
-
-<details><summary>More</summary>
-<img src="https://images.squarespace-cdn.com/content/v1/54e50c15e4b058fc6806d068/1453490707056-2PF9LAZEDO3GBJYWYU00/ke17ZwdGBToddI8pDm48kG7ejt4vIFQNL8gw02H4tglZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIL5qfmBPuCWOsBolAJrR_0bcFLhcJww53qBDxtFJXu78KMshLAGzx4R3EDFOm1kBS/image-asset.jpeg?format=750w"/></details>
 
 # Linear Algebra
 
@@ -120,17 +114,3 @@ Only one error every 11 hours!!!
 
 _...huh?_
 
-## ISBN
-
-ISBN: **I**nternational **S**tandard **B**ook **N**umber
-
-### 10-digit ISBN
-
-The first 9 bits correspond to the country group, publisher and title. The last bit is used as a checkbit with a character from /[0-9X]/
-
-`(sum i * xi from 1 to 10) = 0`
-
-separate x_10
-10 mod 11 === -1 mod 11
-
-`x_10 = (sum i * xi from 1 to 9) % 11`
