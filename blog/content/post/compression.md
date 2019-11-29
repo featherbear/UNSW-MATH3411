@@ -1,7 +1,8 @@
 ---
-title: "Lecture Six"
+title: "Compression"
 date: 2019-10-04T14:03:38+10:00
 
+description: "Kraft-McMillan"
 categories: ["Lectures"]
 hiddenFromHomePage: false
 postMetaInFooter: false

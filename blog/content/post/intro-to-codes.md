@@ -59,8 +59,6 @@ For binary numbers, we have the set Z2 = {0,1} modulo 2.
   - 3 x 5 = 1
   - 3^-1 = 5
 
-
-
 # Linear Algebra
 
 - A **linear combination** is a combination of vectors

@@ -20,3 +20,6 @@ sequenceDiagrams:
 $L_1$ -> Average length of the first column (Apply [Huffman encoding](../huffman-codes))
 
 $L_M = p_1 L_1 + p_2 L_2 + ... + p_q L_q$
+
+
+> More about [Markov sources](../lec08)

@@ -14,19 +14,7 @@ sequenceDiagrams:
   options: ""
 ---
 
-# Binary Hamming error-correction
 
-A code $C$ that
-
-- is binary with the code alphabet ${0, 1}$
-- has fixed length $n$ codewords $x = x_1 ... x_n$
-- is **only single-error correcting**
-- provides user-friendly error-correcting
-- uses $m$ independent linear parity checks
-
-## Encoding Scheme
-
-The encoding scheme is arbitrary, but it is common for the 'check bits' to be the leading columns, and the 'information bits' to be the non-leading columns.
 
 ## Correction Handling
 
@@ -168,36 +156,36 @@ S(y) = Hy^T = 0 1 1 0 0 1 1 x 0;1;1;1;0;0;0;1
 
 011 is 6th column!
 
-So there is an error on the 6th columns
+So there is an error on the 6th columns  
 
-Fixing... we get 0110011  
-Now decoding, remove the check bits x1 x2 x4
+Fixing... we get 0110011    
+Now decoding, remove the check bits x1 x2 x4  
 
 So 1011
 
 ---
 
-Hamming weight - $w(x) = | {i : x_i \ne 0} |$  
-Minimum weight - $w(\) = min {w(x) : x \in C, x \ne 0} $  
-Weight - 'sum' / number of 1 bits
+Hamming weight - $w(x) = | {i : x_i \ne 0} |$    
+Minimum weight - $w(\) = min {w(x) : x \in C, x \ne 0} $    
+Weight - 'sum' / number of 1 bits  
 
 ---
 
 - The 8-bit ASCII has minimum weight $w = 2$
 - Hamming has minimum weight 3
 
-Hamming distance from X to Y, number of bits that are different between X and Y
-minimum distance, smallest not zero
+Hamming distance from X to Y, number of bits that are different between X and Y  
+minimum distance, smallest not zero  
 max, largest
 
 // d(&middot;, &middot;) is a **metric** on $Z_2^n$
 
-d(x,y)>=0
-d(x,y) = 0 iff x=y
-d(x,y) = d(y,x)
-d(x,z) <= d(x,y) + d(y,z)
+d(x,y)>=0  
+d(x,y) = 0 iff x=y  
+d(x,y) = d(y,x)  
+d(x,z) <= d(x,y) + d(y,z)  
+ 
+//  
 
-//
-
-w(x) = d(x, 0)
-d(x,y) = w(x-y) [if x,y are over an Abelian group]
+w(x) = d(x, 0)  
+d(x,y) = w(x-y) [if x,y are over an Abelian group]  

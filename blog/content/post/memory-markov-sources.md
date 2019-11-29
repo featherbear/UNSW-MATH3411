@@ -30,6 +30,8 @@ Find the null space/kernel/(vector that when multiplied by gives zero) of $M - \
 
 A 1-memory source is also called a Markov source.
 
+> More about [Markov sources](../lec08)
+
 ## Encoding/Decoding
 
 Start at the equilibrium matrix, and find the code related to the related source message.    

@@ -1,7 +1,8 @@
 ---
-title: "Lecture Nine"
+title: "Information Theory"
 date: 2019-10-15T12:06:28+11:00
 
+description: "Shannon-Fano Codes, Gibbs' Inequality"
 hiddenFromHomePage: false
 postMetaInFooter: false
 
@@ -86,7 +87,7 @@ with equality iff $p_i = r^{-l_i} for all $i$ and $K_r = \sum_{i=1}^q r^{-l_i} =
 
 -> K = \sum_{i=1}^q 2^{-l_i} = 1
 
-// TODO: PINK ELEPHANT
+-> PINK ELEPHANT
 
 
 ## Shannon-Fano Coding

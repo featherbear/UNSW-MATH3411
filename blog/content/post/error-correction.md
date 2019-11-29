@@ -1,7 +1,7 @@
 ---
-title: "Lecture 04"
+title: "Error Correction"
 date: 2019-09-27T14:09:41+10:00
-
+description: "And sphere packing"
 categories: ["Lectures"]
 hiddenFromHomePage: false
 postMetaInFooter: false

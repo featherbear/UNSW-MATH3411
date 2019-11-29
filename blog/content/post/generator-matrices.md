@@ -1,5 +1,5 @@
 ---
-title: "Lecture 05"
+title: "Generator Matrices"
 date: 2019-10-01T12:08:30+10:00
 
 categories: ["Lectures"]
@@ -27,12 +27,11 @@ $k$ = $n - m$ is the number of non-leading columns - the information bits (by ch
 
 ---
 
-Given a code,
-finding basis: Gram-Schmidtt
+Given a code, finding basis: Gram-Schmidtt
 
-G has size $k * n$  
-H has size $m * n$  
-$k + m = n$
+* G has size $k * n$  
+* H has size $m * n$  
+* $k + m = n$
 
 Can apply row operations on a generator / parity check matrix and it will still be a generator / parity check matrix
 
@@ -99,9 +98,9 @@ which is
 
 Linear codes are equivalent if C' is obtained by permuting the codeword entries of C by a fixed permutation
 
-C' = CP = {xP : x in C} for some permutation matrix P
+$C' = CP = {xP : x in C}$ for some permutation matrix $P$
 
-G' = GP and H' = HP
+$G' = GP$ and $H' = HP$
 
 For example,
 
