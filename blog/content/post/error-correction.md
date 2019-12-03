@@ -75,8 +75,8 @@ $t = 2$
 ## SUMMARY
 
 - If $e+f=d-1$ and $f>=e$, then there is a strategy which is $e$-error correcting and $f$-error detecting
-- If $d = 2t + 1$, then $C$ is $t$ error correcting
-- If $d = 2t + 2$, then $C$ is $t$ error correcting and $t+1$ error detecting
+- If $d = 2t + 1$ -> odd, then $C$ is $t$ error correcting
+- If $d = 2t + 2$ -> even, then $C$ is $t$ error correcting and $t+1$ error detecting
 
 ---
 
