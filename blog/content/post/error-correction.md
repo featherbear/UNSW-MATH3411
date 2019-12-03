@@ -1,5 +1,5 @@
 ---
-title: "Error Correction"
+title: "Error Correction and Detection"
 date: 2019-09-27T14:09:41+10:00
 description: "And sphere packing"
 categories: ["Lectures"]
@@ -23,6 +23,18 @@ d(`Hello`, `Hell!`) = 1
 d(`Help!`, `Hell!`) = 1
 
 ---
+
+# Error Probability
+
+The probability of there being $k$ errors in an message of $n$ bits is.
+
+$P(X=k) = nCk p^k (1-p)^{n-k}$
+
+Depending on the error checking strategy, we might only count some $k$.
+
+* Pure-detection: 1..n-1
+* Even parity, 2, 4, 6, 8, ...
+* Odd parity: 1, 3, 5, 7, ...
 
 # Strategies
 

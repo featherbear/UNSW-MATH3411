@@ -29,6 +29,6 @@ Average codeword length: Sum of (probability * code length * number of repetitio
 
 $ceil(-log(p_i)) * p_i * n$
 
-## Entropy
+## Entropy / Limit
 
 $-log(p_i) * p_i * n$  

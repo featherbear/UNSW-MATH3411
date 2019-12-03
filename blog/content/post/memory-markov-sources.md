@@ -22,9 +22,12 @@ $P$ is equilibrium distribution matrix (probability vector)
 
 In a `k`-memory source, the probability of the next symbol depends on the last `k` symbols.
 
-## Finding the equilibrium matrix
+## Finding the equilibrium matrix $p$
 
-Find the null space/kernel/(vector that when multiplied by gives zero) of $M - \lambdaI$
+* Find the null space/kernel of $M - I$.
+* Then scale by the sum of the elements (To trn them into a probability)
+
+
 
 # Markov Source
 
@@ -34,7 +37,7 @@ A 1-memory source is also called a Markov source.
 
 ## Encoding/Decoding
 
-Start at the equilibrium matrix, and find the code related to the related source message.    
+Start at the equilibrium matrix, and find the code related to the related source message.  
 Then find the column related to the previous source message, and find the code related to the next source message.  
 etc...
 
